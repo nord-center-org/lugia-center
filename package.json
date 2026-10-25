@@ -1,0 +1,38 @@
+{
+  "name": "lugia-center",
+  "version": "0.1.0",
+  "description": "Lugia: provedor multi-IA (Claude, ChatGPT e Gemini) do NordTool",
+  "scripts": {
+    "start": "node src/index.ts",
+    "dev": "node --watch --env-file-if-exists=.env src/index.ts",
+    "typecheck": "tsc",
+    "test": "node --test test/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nord-center-org/lugia-center.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nord-center-org/lugia-center/issues"
+  },
+  "homepage": "https://github.com/nord-center-org/lugia-center#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.3.0",
+    "@google/genai": "^2.31.0",
+    "@hono/node-server": "^2.1.5",
+    "hono": "^4.13.14",
+    "openai": "^7.43.0",
+    "pg": "^8.23.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
+    "typescript": "^5.8.3"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  }
+}
